@@ -14,6 +14,7 @@ h1,h2,h3,h4,h5 {
 h1 {
   font-size: 2rem;
   margin-left: 20px;
+  color: #BB1333;
 }
 
 h2 {
@@ -73,7 +74,7 @@ header nav {
 
 header nav a {
   margin: 0 10px;
-  color: #A0001E;
+  color: #BB1333;
 }
 
 .main-content {
@@ -88,15 +89,22 @@ header nav a {
 }
 
 .lambda-button {
- padding: 10px 15px;
- font-size: 1.5rem;
- border-radius: 10px;
- cursor: pointer;
-}
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  border: unset;
+  cursor: pointer;
 
-.lambda-button:hover {
-  background: #A0001E;
-  color: white;
+  &:hover {
+    background: darken(white, 8%);
+  }
+
+  &.primary {
+    background: #BB1333;
+    color: white;
+    &:hover {
+      background: darken(#BB1333, 8%);
+    }
+  }
 }
 
 
@@ -145,4 +153,14 @@ header nav a {
     width: 100%;
     text-align: center;
   }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.blue-links {
+  color: #2062ad;
+  text-decoration: none;
+  font-weight: bold;
 }
