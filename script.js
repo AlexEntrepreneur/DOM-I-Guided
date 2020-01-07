@@ -36,15 +36,15 @@ console.log('arrayHTML:', arrayHTML);
 
 // Adding our heading image
 const servicesImg = document.querySelector('.services-img');
-servicesImg.src = 'https://tk-assets.lambdaschool.com/820014a9-1951-4880-ac41-08202fca5be0_agency-pic.png'
-servicesImg.alt = 'Picture of Laptop, Headphones, and Coffee';
+servicesImg.src = contentData.main_content.main_img.src;
+servicesImg.alt = contentData.main_content.main_img.alt;
 
 // Making our headings bigger & red
 const secondaryHeaders = document.querySelectorAll('h2');
 
 secondaryHeaders.forEach(element => {
-    element.style.fontSize = '25px';
-    element.style.color = '#A0001E';
+  element.style.fontSize = '25px';
+  element.style.color = '#BB1333';
 });
 
 // Removing extra content at the bottom
@@ -62,7 +62,7 @@ const newLink = document.getElementsByTagName('a');
 const newLinkArray = Array.from(newLink);
 
 newLinkArray.forEach(element => {
-    element.classList.add('purple-links');
+  element.classList.add('purple-links');
 });
 
 //====== Creating New HTML Elements ======//
