@@ -62,7 +62,7 @@ const newLink = document.getElementsByTagName('a');
 const newLinkArray = Array.from(newLink);
 
 newLinkArray.forEach(element => {
-  element.classList.add('purple-links');
+  element.classList.add('blue-links');
 });
 
 //====== Creating New HTML Elements ======//
