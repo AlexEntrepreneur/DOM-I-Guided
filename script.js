@@ -60,9 +60,18 @@ allLinksArray.forEach(element => {
 extraPara[0].textContent = 'This is a string to replace the text content in the bottom paragraph.';
 
 
+// Zakaria
+const logo = document.querySelector('#headerLogo');
+logo.src = contentData.header.logo_img;
+
 
 //====== Creating New HTML Elements ======//
 // 1- Create Element
+const newParagraph = document.createElement('p');
 // 2- Add Content
+newParagraph.textContent = 'Hello! I hope you are having a lovely morning!';
 // 3- Select Target Parent Element
+const secondaryContent = document.querySelector('.secondary-content');
 // 4- Add Element To Parent
+secondaryContent.append(newParagraph);
+// secondaryContent.prepend(newParagraph);
