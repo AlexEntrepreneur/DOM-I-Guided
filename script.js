@@ -24,9 +24,28 @@ console.log(extraPara);
 // Array-like objects (they do not have .map, .reduce, .filter)
 // HTMLCollection - List of HTML elements
 // NodeList - List of all nodes of every type (including HTML elements)
+const arrayConvert = Array.from(tagNameTest);
+console.log('arrayConvert: ', arrayConvert);
 
 
 //====== Manipulating HTML Elements ======//
+const servicesImg = document.querySelector('.services-img');
+servicesImg.src = contentData.main_content.main_img.src;
+servicesImg.alt = contentData.main_content.main_img.alt;
+
+console.log(servicesImg);
+
+const secondaryHeadings = document.querySelectorAll('h2');
+console.log(secondaryHeadings);
+
+secondaryHeadings.forEach(element => {
+  element.style.fontSize = '25px';
+  element.style.color = '#BB1333';
+});
+
+// Removing the extra-stuff paragraph
+extraPara[0].classList.add('invisible');
+
 
 
 //====== Creating New HTML Elements ======//
