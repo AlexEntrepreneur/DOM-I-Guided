@@ -73,5 +73,8 @@ newParagraph.textContent = 'Hello! I hope you are having a lovely morning!';
 // 3- Select Target Parent Element
 const secondaryContent = document.querySelector('.secondary-content');
 // 4- Add Element To Parent
+// Add element as parent container's last child
 secondaryContent.append(newParagraph);
+
+// Add element as parent container's first child
 // secondaryContent.prepend(newParagraph);
