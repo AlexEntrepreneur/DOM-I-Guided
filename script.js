@@ -1,4 +1,23 @@
+// console.dir(document);
+
 //====== Selecting HTML Elements ======//
+const btnById = document.getElementById('custom-btn');
+console.log(btnById);
+
+const btnByQuery = document.querySelector('#custom-btn');
+console.log(btnByQuery);
+
+const btnsByQueryAll = document.querySelectorAll('button');
+console.log(btnsByQueryAll);
+
+const tagNameTest = document.getElementsByTagName('p');
+console.log(tagNameTest);
+
+const classNameTest = document.getElementsByClassName('container');
+console.log(classNameTest);
+
+const extraPara = document.querySelectorAll('.extra-stuff');
+console.log(extraPara);
 
 
 //====== Converting HTMLCollection or NodeList to Arrays ======//
