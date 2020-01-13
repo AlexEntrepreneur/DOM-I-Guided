@@ -44,7 +44,20 @@ secondaryHeadings.forEach(element => {
 });
 
 // Removing the extra-stuff paragraph
-extraPara[0].classList.add('invisible');
+// extraPara[0].classList.add('invisible');
+
+// Using array methods on HTMLCollection
+const allLinks = document.getElementsByTagName('a');
+console.log(allLinks);
+
+const allLinksArray = Array.from(allLinks);
+
+allLinksArray.forEach(element => {
+  element.classList.add('blue-links');
+});
+
+// Adding/replacing text in an element
+extraPara[0].textContent = 'This is a string to replace the text content in the bottom paragraph.';
 
 
 
