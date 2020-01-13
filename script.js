@@ -78,3 +78,6 @@ secondaryContent.append(newParagraph);
 
 // Add element as parent container's first child
 // secondaryContent.prepend(newParagraph);
+
+
+// AVOID USING INNERHTML PLEASE THANK YOU :)
